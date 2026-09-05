@@ -20,7 +20,7 @@ KDF_ITERATIONS = 390_000  # PBKDF2 iteration count for deriving the encryption k
 MIN_KEY_LENGTH = 6        # the key now doubles as the lookup identifier, so require a bit more than before
 
 app = Flask(__name__)
-app.secret_key = "change-this-secret-key"  # used for flash messages AND the admin session cookie
+app.secret_key = "gokul"  # used for flash messages AND the admin session cookie
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 app.config["MAX_CONTENT_LENGTH"] = 20 * 1024 * 1024  # 20 MB upload limit
 
